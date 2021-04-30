@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.LoginActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome"
+            android:textSize="12sp"
+            android:textColor="@color/color_primary"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/market_morning"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@color/color_primary"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/img_login"
+            android:layout_marginTop="15dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_login"
+            android:background="@drawable/bg_login"
+            android:layout_marginTop="15dp"
+            android:layout_width="170dp"
+            android:layout_height="35dp"
+            android:text="@string/login"
+            android:textColor="@color/white"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_register"
+            android:background="@drawable/bg_register"
+            android:layout_marginTop="10dp"
+            android:layout_width="170dp"
+            android:layout_height="35dp"
+            android:text="@string/register"
+            android:textColor="@color/blue"/>
+    </LinearLayout>
+
+</RelativeLayout>
